@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IUTian Syndicate</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+
+  <body style="background-image: url('bgis.JPG'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+    <!-- The cat's paw (follows your cursor) -->
+    <img id="paw" src="s.png" alt="Cat Paw" />
+    <audio id="bgm" src="bgm.mp3" loop></audio>
+
+    <!-- The moving mouse -->
+    <img id="mouse" src="c1.png" alt="Mouse" />
+
+    <!-- Slingshot -->
+    <img id="slingshot" src="Y.png" alt="Slingshot" />
+
+    <!-- Audio files -->
+    <audio id="damageSound" src="a.mp3"></audio>
+    <audio id="bgmt" src="bgmt.mp3"></audio>
+    <!-- <audio id="one" src="one.mp3"></audio> -->
+
+    <!-- Score display -->
+    <div id="score">Score: 0</div>
+
+    <!-- Target display -->
+    <div id="target">Target: 10</div>
+
+    <!-- Victory message (hidden until game over) -->
+    <div id="victory" style="text-align: center; display: none;" onclick="location.reload();">
+        TERMINATED <br>
+        <span style="font-size: 20px; color: black; background-color: white; padding: 15px; border-radius: 5px; cursor: pointer;">Click Here To Replay</span>
+    </div>
+
+    
+
+    
+    <!-- External script file -->
+    <script src="script.js"></script>
+  </body>
+</html>
